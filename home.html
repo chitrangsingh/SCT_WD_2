@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/icons/stopwatch.png"
+      type="image/x-icon"
+    />
+    <title>STOPIII</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_container">
+        <span class="logo"
+          ><img
+            src="images/icons/stopwatch.png"
+            id="logo_img"
+            alt="logo_icon"
+          />STOPIII</span
+        >
+      </div>
+    </header>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+
+    <section>
+      <div class="clock_container">
+        <div class="watch">
+          <div id="outer_circle" class="circles">
+            <div id="inner_circle" class="circles">
+              <!-- <span class="text" id="hour"></span> -->
+              <span class="text min" id="min">0 &nbsp;&nbsp;&nbsp;&nbsp;:</span>
+              <span class="text sec" id="sec">0 &nbsp;&nbsp;&nbsp;&nbsp;:</span>
+              <span class="text msec" id="msec">0</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="button hidden" id="resetbtn">Reset</button>
+            <button class="button" id="playbtn">Play</button>
+            <button class="button hidden" id="lapbtn">Lap</button>
+          </div>
+        </div>
+        <ul class="laps" id="lapsi">
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
